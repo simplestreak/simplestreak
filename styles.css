@@ -21,10 +21,10 @@
 
 .video-container {
     position: absolute;
-    top: 6.9%; /* These percentage values align the video with the screen area */
+    top: 2.9%; /* These percentage values align the video with the screen area */
     left: 6.2%;
     width: 87.6%;
-    height: 90.2%;
+    height: 94.6%;
     overflow: hidden;
     z-index: 1;
     border-radius: 28px; /* Match the iPhone's screen corners */
