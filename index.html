@@ -1,56 +1,65 @@
-<title></title>
-<meta name="Simple Streak: Habit Tracking for iOS" content="Design">
-<link href="fonts/recoleta.css" rel="stylesheet" />
-<link href="fonts/recoleta-med.css" rel="stylesheet" />
-<link href="fonts/icofont.css" rel="stylesheet" />
-<link href="fonts/visuelt.css" rel="stylesheet" />
-<link href="styles.css" rel="stylesheet" />
-<link href="modal.css" rel="stylesheet" />
-<link href="favicon.png" rel="shortcut icon" type="image/x-icon" /><meta name="viewport" content="width=device-width,initial-scale=1.0"><meta charset="UTF-8"><script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script><!-- Global site tag (gtag.js) - Google Analytics --><script async src="https://www.googletagmanager.com/gtag/js?id=UA-6881481-16">
-</script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'UA-6881481-16');
-</script>
-<script>
-    // When the page loads, ensure the video is properly placed
-    document.addEventListener('DOMContentLoaded', function() {
-        // You might need to adjust these values based on the actual image dimensions
-        const deviceContainer = document.querySelector('.device-container');
-        const videoContainer = document.querySelector('.video-container');
-        
-        // This function can be used to fine-tune the video positioning if needed
-        function adjustVideoPosition() {
-            // Any additional adjustments can be made here
-        }
-        
-        adjustVideoPosition();
-        // Adjust on window resize for responsiveness
-        window.addEventListener('resize', adjustVideoPosition);
-    });
-    </script>
-<div id="new-tag">
-  <h1 id="firstname">Beautifully simple streak tracking for iOS.
-  </h1>
-  <ul id="nav">
-    <li>Download</li>
-    <li>Contact</li>
-    <li>Privacy</li>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Simple Streak: Habit Tracking for iOS</title>
+    <meta name="description" content="Beautifully simple streak tracking for iOS">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
     
-  </ul>
-</div>
-<div id="demo">
-<div class="device-container">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="fonts/recoleta.css">
+    <link rel="stylesheet" href="fonts/recoleta-med.css">
+    <link rel="stylesheet" href="fonts/icofont.css">
+    <link rel="stylesheet" href="fonts/visuelt.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="modal.css">
+    
+    <!-- jQuery (loaded from secure source with specific version) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-6881481-16"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-6881481-16');
+    </script>
+</head>
+<body>
+    <div id="new-tag">
+        <h1 id="firstname">Beautifully simple streak tracking for iOS.</h1>
+        <ul id="nav">
+            <li>Download</li>
+            <li>Contact</li>
+            <li>Privacy</li>
+        </ul>
+    </div>
+
+    <div id="demo">
+        <div class="device-container">
             <div class="video-container">
-                <!-- Replace with your actual app video -->
                 <video autoplay loop muted playsinline>
                     <source src="appdemo.M4V" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
             </div>
-            <!-- Using the provided iPhone image as the frame -->
             <img src="iphone_mini_frame_v2.png" alt="iPhone frame" class="device-frame">
         </div>
-</div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const deviceContainer = document.querySelector('.device-container');
+            const videoContainer = document.querySelector('.video-container');
+            
+            function adjustVideoPosition() {
+                // Any additional adjustments can be made here
+            }
+            
+            adjustVideoPosition();
+            window.addEventListener('resize', adjustVideoPosition);
+        });
+    </script>
+</body>
+</html>
