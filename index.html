@@ -14,6 +14,23 @@
   gtag('js', new Date());
   gtag('config', 'UA-6881481-16');
 </script>
+<script>
+    // When the page loads, ensure the video is properly placed
+    document.addEventListener('DOMContentLoaded', function() {
+        // You might need to adjust these values based on the actual image dimensions
+        const deviceContainer = document.querySelector('.device-container');
+        const videoContainer = document.querySelector('.video-container');
+        
+        // This function can be used to fine-tune the video positioning if needed
+        function adjustVideoPosition() {
+            // Any additional adjustments can be made here
+        }
+        
+        adjustVideoPosition();
+        // Adjust on window resize for responsiveness
+        window.addEventListener('resize', adjustVideoPosition);
+    });
+    </script>
 <div id="new-tag">
   <h1 id="firstname">Beautifully simple streak tracking for iOS.
   </h1>
@@ -24,3 +41,15 @@
     
   </ul>
 </div>
+
+<div class="device-container">
+            <div class="video-container">
+                <!-- Replace with your actual app video -->
+                <video autoplay loop muted playsinline>
+                    <source src="/api/placeholder/400/320" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <!-- Using the provided iPhone image as the frame -->
+            <img src="/api/placeholder/400/800" alt="iPhone frame" class="device-frame">
+        </div>
