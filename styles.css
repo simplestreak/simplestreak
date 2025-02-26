@@ -20,6 +20,7 @@
 h1 {font-weight: 100;   font-size: calc(3vh + 4vw);
     line-height: 95%;
     letter-spacing: -0.5px;
+    font-family: 'visuelt-regular';
 }
 
 
@@ -415,6 +416,7 @@ a.textlink {
    animation-delay: .2s;
    animation-fill-mode: forwards;
    opacity: 0;
+  font-family: 'visuelt-regular';
 }
 #surname {
    z-index: -10000;
