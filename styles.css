@@ -463,7 +463,7 @@ a {
 }
 body {
    overflow: hidden;
-  margin-top: 3%;
+  margin-top: 3%!important;
   margin-bottom:3%;
   margin-right:0;
   margin-left:0;
