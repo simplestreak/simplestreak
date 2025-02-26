@@ -40,7 +40,7 @@
 /* Responsive adjustments */
 @media (max-width: 480px) {
     .device-container {
-        width: 300px; /* Smaller on mobile devices */
+        width: 200px; /* Smaller on mobile devices */
     }
 }
 
