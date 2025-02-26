@@ -1,3 +1,49 @@
+/* Add these styles to your existing styles.css file */
+
+/* iPhone frame and video container styling */
+.device-container {
+    position: relative;
+    margin: 40px auto;
+    width: 375px; /* Adjust based on your iphone_mini_frame.png width */
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.device-frame {
+    width: 100%;
+    height: auto;
+    display: block;
+    position: relative;
+    z-index: 2;
+}
+
+.video-container {
+    position: absolute;
+    top: 6.9%; /* These percentage values align the video with the screen area */
+    left: 6.2%;
+    width: 87.6%;
+    height: 86.2%;
+    overflow: hidden;
+    z-index: 1;
+    border-radius: 28px; /* Match the iPhone's screen corners */
+}
+
+.video-container video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background: #fff; /* Fallback background color */
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+    .device-container {
+        width: 300px; /* Smaller on mobile devices */
+    }
+}
+
 ::selection {
   background: #ffd40042; /* WebKit/Blink Browsers */
 }
